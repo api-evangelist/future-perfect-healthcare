@@ -1,0 +1,27 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+limit_count: 0
+note: >-
+  No published rate limits. Future Perfect declares an API on its G-Cloud 14 PANACEA entry
+  but publishes no developer reference, so no quota, window, burst allowance, 429 behaviour
+  or RateLimit response header is documented anywhere public. Nothing could be observed
+  live either: there is no public base URL to call. This is an honest zero, not an
+  unchecked field.
+limits: []
+headers: []
+exhaustion_status: unpublished
+scaling_note: >-
+  The only capacity statement published is the G-Cloud "Independence of resources" field:
+  "Performance monitoring included. Additional storage and compute resources can be quickly
+  scaled using Rackspace Government Cloud secure hosting option." That is an infrastructure
+  statement, not a rate limit.
+usage_metrics_published:
+- users
+- patient records
+- transactions
+- storage utilisation
+- compute utilisation
+usage_metrics_note: >-
+  G-Cloud "Metrics types" — these are reported to the customer via real-time dashboards and
+  regular reports, not returned as API rate-limit headers.

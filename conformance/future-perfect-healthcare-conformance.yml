@@ -1,0 +1,164 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+  (supplier-authored G-Cloud 14 service entry for PANACEA),
+  https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368,
+  https://openehr.org/community/industry_partners,
+  https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=531
+note: >-
+  Future Perfect (Healthcare) publishes NO machine-readable contract, so nothing in this
+  file was verified against a spec. Every row below is a claim the company itself published
+  on a public page (its own site, its UK G-Cloud 14 supplier entries, or the openEHR
+  International industry-partner register) and the evidence names the exact page. Where a
+  claim could only be confirmed by reading a contract we do not have, `verified_against` is
+  `vendor-declaration`, not `contract`.
+
+conformance:
+- id: openehr
+  name: openEHR (ISO 13606-aligned clinical data model / clinical data repository)
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    "PANACEA's clinical repository (openEHR) holds the integrated record" and "Uses the
+    openEHR clinical platform" (healthcare.future-perfect.co, PANACEA page id=531);
+    G-Cloud 14 system requirement is literally "OpenEHR Platform"; the company is listed
+    on openehr.org/community/industry_partners as a UK industry partner, and its own
+    2026-02-06 news post records renewal of its openEHR Industry Bronze Partnership.
+  url: https://openehr.org/community/industry_partners
+- id: hl7v2
+  name: HL7 v2 messaging
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 PANACEA entry, "What users can and can't do using the API": "The APIs'
+    capabilities are principally designed to allow the exchange of data using standards
+    such as openEHR, HL7v2 or FHIR." HL7 also listed under data import/export formats
+    ("HL7 all versions").
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: hl7-fhir
+  name: HL7 FHIR
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    Same G-Cloud 14 API field as above; FHIR is also named in both the data import and
+    data export format lists for PANACEA.
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: oauth2
+  name: OAuth 2.0
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 PANACEA feature list: "Open security standards (OAuth2/OpenIdConnect)
+    providing Single-Sign-On with the customer's systems."
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: oidc
+  name: OpenID Connect
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    Same feature line as oauth2; G-Cloud user-authentication field additionally records
+    "Identity federation with existing provider", 2-factor authentication and public key
+    authentication (including by TLS client certificate).
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: dcb0129
+  name: NHS DCB0129 — Clinical Risk Management, manufacture of health IT systems
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    "Is clinically safety assured to NHS Digital's DCB 0129 standard" (PANACEA page
+    id=531); "Clinical safety assurances: DCB0129/0160" (G-Cloud 14, both services).
+  url: https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=531
+- id: dcb0160
+  name: NHS DCB0160 — Clinical Risk Management, deployment of health IT systems
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: 'G-Cloud 14 accreditations line: "Clinical safety assurances: DCB0129/0160."'
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+- id: iso-27001
+  name: ISO/IEC 27001 Information Security Management
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 standards block — ISO/IEC 27001 certification: Yes; certified by Citation
+    ISO Certification Limited, accredited by ASCB; accreditation date 08/07/2020; "What
+    the ISO/IEC 27001 doesn't cover: None."
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: cyber-essentials
+  name: UK NCSC Cyber Essentials
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 standards block — Cyber essentials: Yes; Cyber essentials plus: No.
+    Also listed in the second service's accreditations line alongside ISO-9001/14001/27001.
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: iso-9001
+  name: ISO 9001 Quality Management
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 (Digital Innovation Platform) feature line: "Accreditations:
+    ISO-9001/14001/27001 and CyberEssentials."
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+- id: iso-14001
+  name: ISO 14001 Environmental Management
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: 'Same G-Cloud 14 accreditations line as ISO 9001.'
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+- id: csa-ccm-v3
+  name: CSA Cloud Controls Matrix v3.0
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 security-governance standard is recorded as "CSA CCM version 3.0"; data
+    at rest, equipment disposal and datacentre security are all declared against CSA CCM v3.0.
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: wcag-2.1-aa
+  name: WCAG 2.1 AA / EN 301 549
+  conforms: true
+  verified_against: vendor-declaration
+  evidence: >-
+    G-Cloud 14 accessibility fields: user support, online ticketing and web chat are all
+    declared to "WCAG 2.1 AA or EN 301 549".
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- id: rfc9457
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  verified_against: none
+  evidence: >-
+    No public contract or error reference is published, so the error envelope cannot be
+    determined. Recorded as not-established rather than absent.
+- id: openapi
+  name: OpenAPI Specification
+  conforms: false
+  verified_against: vendor-declaration
+  evidence: >-
+    The company declares "API documentation formats: Open API (also known as Swagger),
+    HTML, PDF" on its G-Cloud 14 PANACEA entry, but no OpenAPI document is published at
+    any public URL — see x-coverage in apis.yml. Marked false because conformance here
+    means a retrievable spec, and there is none to retrieve.
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+domain_standard:
+  standard: openEHR
+  sector: healthcare / electronic health records
+  declared: true
+  declared_in: vendor-declaration
+  contract_evidence: null
+  note: >-
+    openEHR is the domain standard for this market and Future Perfect's entire product
+    position rests on it — PANACEA is described as an openEHR clinical repository, the
+    G-Cloud system requirement is "OpenEHR Platform", and the company is a listed openEHR
+    International industry partner (Bronze, renewed 2026-02-06). The 0.12.0
+    domain_standard_conformance check wants the CONTRACT to declare the standard
+    (an openEHR REST ITS surface, an archetype/template identifier, a FHIR CapabilityStatement).
+    Nothing machine-readable is published, so this is a strong prose declaration with no
+    contract behind it and must not be scored as a contract-level conformance.
+
+certifications:
+- ISO/IEC 27001 (Citation ISO Certification Limited, accredited by ASCB, 2020-07-08)
+- ISO 9001
+- ISO 14001
+- Cyber Essentials
+- NHS DCB0129 / DCB0160 clinical safety assurance

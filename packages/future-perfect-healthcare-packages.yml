@@ -1,0 +1,17 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  registry.npmjs.org search (future-perfect, panacea, panacea-openehr), pypi.org,
+  and the company's own site — no SDK, SourceCode or CLI link exists in apis.yml to derive from.
+package_count: 0
+official_sdk_count: 0
+packages: []
+note: >-
+  No first-party client library exists in any public registry. npm results for
+  "panacea"/"future-perfect" are unrelated projects (medibloc/panacea-js, panacea-coin,
+  perfect-scrollbar, an Algorand token client); pypi.org/pypi/panacea-openehr/json returned
+  404; no GitHub organisation resolves for the company (api.github.com/orgs/
+  future-perfect-healthcare and three name variants all answered 403 unauthenticated, and
+  no org is linked from the site). No SDKs pointer is emitted in apis.yml — there is no
+  official SDK to point at. Because there is no package, there is no version/published date
+  to record: this is a checked absence, not an unchecked field.

@@ -1,0 +1,62 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+docs: null
+note: >-
+  There is no public authentication reference and no securitySchemes block to derive from —
+  Future Perfect publishes no OpenAPI. Everything below is taken verbatim from the
+  supplier-authored identity/authentication fields of the G-Cloud 14 PANACEA service entry,
+  which is the only public description of how the platform authenticates. Scheme details
+  (token endpoints, issuer, scopes, header names) are NOT published anywhere public.
+
+api: PANACEA (no public base URL published)
+public_reference: false
+
+schemes:
+- type: oauth2
+  name: OAuth 2.0 / OpenID Connect single sign-on
+  description: >-
+    "Open security standards (OAuth2/OpenIdConnect) providing Single-Sign-On with the
+    customer's systems." Deployed as identity federation against the buying organisation's
+    existing identity provider.
+  flows: unpublished
+  issuer: unpublished
+  scopes_published: false
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- type: mutualTLS
+  name: Public key authentication including TLS client certificate
+  description: >-
+    G-Cloud 14 "User authentication" field lists "Public key authentication (including by
+    TLS client certificate)" among supported user authentication methods.
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- type: http
+  name: Username and password with 2-factor authentication
+  description: >-
+    G-Cloud 14 "User authentication" field lists "2-factor authentication" and "Username or
+    password". Management access authentication is declared as 2-factor; the web
+    administration portal is additionally restricted to whitelisted IP addresses.
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+identity_federation: true
+mfa: true
+ip_allowlisting:
+  present: true
+  scope: web administration portal
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+transport:
+  tls: 'TLS 1.2 or above between buyer and supplier networks and within the supplier network'
+  caveat: >-
+    The same G-Cloud field also declares "Legacy SSL and TLS (under version 1.2)" as a
+    supported data-in-transit protection option, alongside IPsec/TLS VPN gateway.
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+audit:
+  user_audit: 'Users have access to real-time audit information; retention is user-defined.'
+  supplier_audit: 'Users contact the support team to get audit information.'
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+gaps:
+- No public OAuth metadata document (/.well-known/openid-configuration returned 404).
+- No published scope or permission reference, so scopes/ is not written for this provider.
+- No public token endpoint, client registration flow, or key-issuance documentation.

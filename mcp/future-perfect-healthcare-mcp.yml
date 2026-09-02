@@ -1,0 +1,21 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  Searched the company site, the openEHR industry-partner register, npm and the web for a
+  hosted or packaged MCP server; probed /.well-known/* and the docs host for any MCP
+  endpoint. Nothing found.
+status: none
+server_count: 0
+tools: []
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+note: >-
+  No MCP server is published, and none could be derived: deriving a candidate tool list
+  requires an OpenAPI, and Future Perfect publishes no machine-readable contract. No
+  MCPServer pointer is emitted in apis.yml. Recorded so a later run can see the surface was
+  checked on 2026-09-02 rather than skipped.

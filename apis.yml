@@ -1,17 +1,38 @@
 aid: future-perfect-healthcare
 name: Future Perfect (Healthcare)
-description: 'Future Perfect (Healthcare) is a company surfaced via the API Evangelist harvest backlog
-  (source: openehr-coalition) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Future Perfect (Healthcare) Limited is a UK health-informatics company that builds PANACEA,
+  an integrated care-pathway electronic record platform built on an openEHR clinical
+  repository. PANACEA connects existing provider systems as nodes through single sign-on so
+  that shared care records, Cancer Alliances, pathology networks and genomics registries can
+  work from one real-time, vendor-neutral record rather than from siloed exports. Around it
+  the company sells openEHR integration and development, clinical safety assurance to NHS
+  DCB0129/DCB0160, hosting and co-development of AI clinical decision support, and UK resale
+  of openEHR e-learning. It is a listed openEHR International industry partner (Bronze,
+  renewed February 2026) and sells to the NHS through the UK G-Cloud 14 framework. The
+  company declares that PANACEA exposes APIs for openEHR, HL7 v2 and FHIR data exchange,
+  documented in OpenAPI, but publishes no developer portal, base URL or contract publicly.
 url: https://raw.githubusercontent.com/api-evangelist/future-perfect-healthcare/refs/heads/main/apis.yml
+image: https://www.healthcare.future-perfect.co/images/fav-fp300x.png
 x-type: company
 x-source: harvest:openehr-coalition
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-2026-09-02
 specificationVersion: '0.20'
 created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Healthcare
+- Health IT
+- Electronic Health Records
+- openEHR
+- Interoperability
+- Clinical Decision Support
+- Genomics
+- Artificial Intelligence
+- NHS
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,3 +42,52 @@ maintainers:
 common:
 - type: Website
   url: https://www.healthcare.future-perfect.co/
+- type: Blog
+  url: https://www.healthcare.future-perfect.co/index.php/latest-news
+- type: PrivacyPolicy
+  url: https://www.healthcare.future-perfect.co/index.php/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/future-perfect-healthcare/
+- type: Twitter
+  url: https://twitter.com/FPerfect_health
+- type: DomainSecurity
+  url: security/future-perfect-healthcare-domain-security.yml
+- type: Conformance
+  url: conformance/future-perfect-healthcare-conformance.yml
+- type: Compliance
+  url: conformance/future-perfect-healthcare-conformance.yml
+- type: Authentication
+  url: authentication/future-perfect-healthcare-authentication.yml
+- type: Lifecycle
+  url: lifecycle/future-perfect-healthcare-lifecycle.yml
+- type: Plans
+  url: plans/future-perfect-healthcare-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/future-perfect-healthcare-rate-limits.yml
+- type: LLMsTxt
+  url: llms/future-perfect-healthcare-llms.txt
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 11
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Future Perfect's own G-Cloud 14 PANACEA entry answers "API: Yes", "API documentation:
+    Yes" and "API documentation formats: Open API (also known as Swagger)", but that OpenAPI
+    is supplied only to contracted customers — the company runs no developer portal at all,
+    and every discovery path on its Joomla marketing site (/openapi.json, /swagger.json,
+    /api-docs, /docs, /developers, /llms.txt and all seven /.well-known/ paths) returns the
+    same 404 error page, with no api./docs./developer. subdomain resolving in DNS.
+  evidence:
+  - url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+    status: 200
+  - url: https://www.healthcare.future-perfect.co/openapi.json
+    status: 404
+  - url: https://www.healthcare.future-perfect.co/.well-known/api-catalog
+    status: 404
+  - url: https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=531
+    status: 200
+  checked: '2026-09-02'

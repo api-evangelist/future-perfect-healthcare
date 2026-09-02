@@ -1,0 +1,24 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+publicly_accessible: false
+note: >-
+  Future Perfect answers "API sandbox or test environment: Yes" on its G-Cloud 14 PANACEA
+  entry, and separately offers "Trial access to our Cloud Software services, to allow
+  customers to evaluate them, before committing to rollout". Neither is reachable without a
+  procurement conversation: there is no public console, no test key prefix, no test
+  identifiers, no fixtures and no documented trigger tooling. No Sandbox pointer is emitted
+  in apis.yml, because the pointer would assert a developer-reachable sandbox and none exists.
+declared:
+  api_sandbox: true
+  trial_access: true
+  trial_description: >-
+    "We offer Trial access to our Cloud Software services, to allow customers to evaluate
+    them, before committing to rollout as Cloud services (Community or Private Cloud)."
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+test_credentials: []
+test_values: []
+time_simulation: null
+access:
+  route: contact the supplier (admin@future-perfect.co) via the G-Cloud listing or the site contact form
+  self_serve: false

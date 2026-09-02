@@ -1,0 +1,84 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+note: >-
+  Derived from nothing on disk — there is no OpenAPI to read deprecated operations from.
+  Every field below is a supplier-authored statement on the G-Cloud 14 PANACEA service
+  entry. No public status page, no public versioning policy and no public deprecation
+  policy exist, so no StatusPage or Deprecation pointer is emitted in apis.yml.
+
+versioning:
+  policy_published: false
+  scheme: unpublished
+  note: >-
+    No public version scheme, no changelog, no release notes. Releases are described only
+    as "non-disruptive approaches to software release, patching, database maintenance".
+
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  deprecated_operations: []
+  note: RFC 8594 Sunset/Deprecation header support cannot be established without a contract.
+
+status_page:
+  public: false
+  outage_reporting:
+  - dashboard
+  - email alerts
+  note: >-
+    G-Cloud "Outage reporting" is "Dashboard, Email alerts" — a customer-facing dashboard,
+    not a public status page. No status.* host resolves for future-perfect.co.
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+availability:
+  sla_published: false
+  guaranteed_availability: >-
+    "Panacea's architecture is designed for continuous operation. Planned maintenance
+    episodes are minimised as much as possible and are only required in exceptional
+    circumstances." No numeric availability target is published.
+  resilience: 'Approach to resilience: "Available on request."'
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+support_sla:
+  hours: 9 to 5 UK time, Monday to Friday (out-of-hours on request)
+  response: >-
+    "we respond to all service incidents within 30 mins to 1 hour, depending on the urgency"
+  channels:
+  - email / online ticketing (customer support portal)
+  - phone (07785 375700, 9-5 UK)
+  - web chat (9-5 UK)
+  - onsite support at extra cost
+  ticket_self_service: 'Users can manage status and priority of support tickets.'
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+exit_and_portability:
+  data_export_on_exit: >-
+    "At the end of a contract, users can export their configuration and data before the
+    infrastructure is securely cleared of data. Bespoke data exports are available on request."
+  export_formats: [CSV, JSON, XML, openEHR, HL7 (all versions), FHIR, Custom]
+  import_formats: [CSV, XML, openEHR, HL7 (all versions), FHIR, JSON, Custom]
+  ip_note: >-
+    "Future Perfect retains all intellectual property in the software. The customer owns the
+    configuration of the Panacea solution at the customer site. The customer does not receive
+    the source code of the software."
+  exit_plan: >-
+    "An agreed exit plan will be included in any contract" covering obligations, timescales
+    and data migration.
+  source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+frameworks:
+- name: G-Cloud 14
+  supplier: FUTURE PERFECT (HEALTHCARE) LIMITED
+  services:
+  - id: '557090777176539'
+    lot: 'Lot 2: Cloud software'
+    name: PANACEA Shared Care Platform for Whole System Personalised healthcare
+    url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+  - id: '467549587843368'
+    lot: 'Lot 3: Cloud Support Service'
+    name: Digital Innovation Platform and Healthcare Registries (AI, Genomics, Inheritable Cancers)
+    url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+  note: >-
+    The company's earlier G-Cloud supplier page (/g-cloud/supplier/715929) now returns 404;
+    the two G-Cloud 14 service pages above were live at 200 on 2026-09-02.

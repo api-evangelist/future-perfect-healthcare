@@ -1,0 +1,64 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+note: >-
+  Future Perfect publishes no API pricing page and no self-serve plans — there is no sign-up,
+  no free tier and no metered API price anywhere public. What IS public is procurement
+  pricing on the UK G-Cloud 14 framework and a single list price for its openEHR e-learning
+  resale. Those are recorded below as published prices, not as API plans; plan_count counts
+  only the publicly-priced offerings found.
+
+plan_count: 3
+self_serve_signup: false
+free_tier: false
+currency: GBP
+
+plans:
+- name: PANACEA Shared Care Platform (G-Cloud 14, Lot 2 Cloud software)
+  price: '5542.00 to 10381.00'
+  price_display: £5,542 to £10,381 an instance a month
+  currency: GBP
+  unit: instance
+  period: month
+  included_quota: not published
+  overage: not published
+  limits: not published
+  contract: 'Framework: G-Cloud 14. Service ID 557090777176539.'
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+  method: searched
+- name: Digital Innovation Platform and Healthcare Registries (G-Cloud 14, Lot 3 Cloud support)
+  price: '0.00'
+  price_display: £0 a unit
+  currency: GBP
+  unit: unit
+  period: null
+  note: >-
+    Listed at £0 a unit on the framework; actual engagement is priced from the published
+    SFIA rate card and service definition (PDF attachments on the listing), which are the
+    commercial instruments rather than a plan.
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368
+  method: searched
+- name: openEHR e-learning user licence (UK resale)
+  price: '650.00'
+  price_display: £650 per 3-month user licence
+  currency: GBP
+  unit: user licence
+  period: 3 months
+  note: >-
+    "At £650 per 3-month user licence (discounts are available, for example, for a set of
+    10 licenses)". This is training, not API access — included because it is the only list
+    price the company publishes on its own website.
+  url: https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=541
+  method: searched
+
+rate_cards:
+- name: Skills Framework for the Information Age (SFIA) rate card
+  format: PDF
+  available_on: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+- name: Pricing document
+  format: PDF
+  available_on: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
+
+gaps:
+- No API pricing, no per-call price, no quota published anywhere public.
+- No sign-up or trial URL; evaluation is arranged through a planning/trial engagement.

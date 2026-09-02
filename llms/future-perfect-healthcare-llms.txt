@@ -1,0 +1,51 @@
+# Future Perfect (Healthcare)
+
+> Future Perfect (Healthcare) Limited is a UK health-informatics company (registered in
+> England, company number 12551507, Heydon, Hertfordshire) that builds PANACEA, an
+> openEHR-based integrated care-pathway record platform for the NHS and other health and
+> care systems. It sells the platform, openEHR integration and clinical-safety consulting,
+> AI clinical decision support hosting, and UK resale of openEHR e-learning. It is a listed
+> openEHR International industry partner (Bronze, renewed February 2026).
+
+IMPORTANT FOR AGENTS: Future Perfect declares that PANACEA has an API documented in
+OpenAPI/Swagger, and that a sandbox exists — but neither is published. There is no
+developer portal, no public base URL, no public reference, no OpenAPI document, no SDK, no
+MCP server and no agent card. Every /.well-known/ path on the website returns 404. An agent
+cannot call this provider; access begins with a procurement conversation. Do not synthesise
+a PANACEA API client — nothing public describes the endpoints.
+
+## What they build
+- [PANACEA](https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=531): integrated pathway electronic record system built on an openEHR clinical repository; provider systems connect as nodes via single sign-on. Containerised microservices, component-based UX, custom forms designer, Panacea-Integration-Hub real-time connectors, detailed audit. Clinically safety assured to NHS DCB0129.
+- [Shared Care Record](https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=766): live shared care for Integrated Care Boards on top of existing digital records repositories.
+- [Cancer Alliances](https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=764): region-wide MDT data, tumour-level views, genomics integration.
+- [Pathology Networks](https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=765): consolidation and normalisation of LIMS data across labs for benchmarking and longitudinal patient results.
+- AI clinical decision support: co-development, hosting, proof of concept, clinical trialling and implementation of AI applications against the integrated record.
+- [openEHR e-learning](https://www.healthcare.future-perfect.co/index.php/component/sppagebuilder/?view=page&id=541): UK reseller of the openEHR introduction and awareness course, £650 per 3-month user licence.
+
+## Standards and assurance (company-declared, no contract published)
+- openEHR clinical data repository — the platform's foundation; system requirement is literally "OpenEHR Platform".
+- Data exchange declared over openEHR, HL7 v2 and HL7 FHIR; import/export in CSV, JSON, XML, openEHR, HL7 (all versions), FHIR.
+- OAuth 2.0 / OpenID Connect single sign-on with the customer's identity provider; 2FA; TLS client certificates; IP allowlisting for the admin portal.
+- NHS DCB0129 and DCB0160 clinical safety assurance.
+- ISO/IEC 27001 (Citation ISO Certification Limited, accredited by ASCB, 2020-07-08), ISO 9001, ISO 14001, Cyber Essentials, CSA CCM v3.0 governance, WCAG 2.1 AA.
+- UK data residency; penetration testing at least annually by a CHECK provider.
+
+## Commercial
+- [G-Cloud 14 — PANACEA Shared Care Platform](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539): £5,542 to £10,381 an instance a month.
+- [G-Cloud 14 — Digital Innovation Platform and Healthcare Registries](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/467549587843368): £0 a unit, priced from the SFIA rate card.
+- Support: email/online ticketing portal, phone and web chat, 9-5 UK Monday to Friday, 30-minute to 1-hour incident response; out-of-hours on request.
+- Contact: admin@future-perfect.co / info@future-perfect.co.
+
+## Site
+- [Home](https://www.healthcare.future-perfect.co/)
+- [Customer stories](https://www.healthcare.future-perfect.co/index.php/customer-stories)
+- [Latest news](https://www.healthcare.future-perfect.co/index.php/latest-news)
+- [Privacy policy](https://www.healthcare.future-perfect.co/index.php/privacy-policy)
+- [LinkedIn](https://www.linkedin.com/company/future-perfect-healthcare/)
+- [openEHR industry partners register](https://openehr.org/community/industry_partners)
+
+## Provenance
+Generated 2026-09-02 by the API Evangelist enrichment pipeline from the company's own
+website, its two live UK G-Cloud 14 service entries, and the openEHR International
+industry-partner register. The provider does not publish an llms.txt of its own
+(https://www.healthcare.future-perfect.co/llms.txt returned 404).
