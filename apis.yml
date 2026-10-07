@@ -40,6 +40,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539
 - type: Website
   url: https://www.healthcare.future-perfect.co/
 - type: Blog
