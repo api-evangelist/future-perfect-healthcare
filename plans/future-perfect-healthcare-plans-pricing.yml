@@ -62,3 +62,37 @@ rate_cards:
 gaps:
 - No API pricing, no per-call price, no quota published anywhere public.
 - No sign-up or trial URL; evaluation is arranged through a planning/trial engagement.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  - seat
+  units:
+  - compute
+  - credit
+  - seat
+  plans:
+  - name: PANACEA Shared Care Platform (G-Cloud 14, Lot 2 Cloud software)
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - month
+  - name: Digital Innovation Platform and Healthcare Registries (G-Cloud 14, Lot 3 Cloud s
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - credit
+    periods: []
+  - name: openEHR e-learning user licence (UK resale)
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - other
