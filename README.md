@@ -64,5 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Future Perfect (Healthcare) is a company surfaced via the API Evangelist harvest backlog (source: openehr-coalition) and added to the network as a stub for full-pipeline profiling.
-- https://www.healthcare.future-perfect.co/
+Future Perfect (Healthcare) Limited is a UK health-informatics company that builds PANACEA, an integrated care-pathway electronic record platform built on an openEHR clinical repository. PANACEA connects existing provider systems as nodes through single sign-on so that shared care records, Cancer Alliances, pathology networks and genomics registries can work from one real-time, vendor-neutral record rather than from siloed exports. Around it the company sells openEHR integration and development, clinical safety assurance to NHS DCB0129/DCB0160, hosting and co-development of AI clinical decision support, and UK resale of openEHR e-learning. It is a listed openEHR International industry partner (Bronze, renewed February 2026) and sells to the NHS through the UK G-Cloud 14 framework. The company declares that PANACEA exposes APIs for openEHR, HL7 v2 and FHIR data exchange, documented in OpenAPI, but publishes no developer portal, base URL or contract publicly.
+
+**Areas:** Company · Healthcare · Health IT · Electronic Health Records · openEHR · Interoperability · Clinical Decision Support · Genomics · Artificial Intelligence · NHS · United Kingdom
+
+## Future Perfect (Healthcare) on APIs.io
+
+Everything profiled for Future Perfect (Healthcare) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/future-perfect-healthcare/](https://apis.io/providers/future-perfect-healthcare/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Future Perfect Healthcare Authentication](https://apis.io/security/future-perfect-healthcare/future-perfect-healthcare-authentication/)
+- [Future Perfect Healthcare Domain Security](https://apis.io/security/future-perfect-healthcare/future-perfect-healthcare-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Future Perfect Healthcare Plans Pricing](https://apis.io/plans/future-perfect-healthcare/future-perfect-healthcare-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Future Perfect Healthcare Rate Limits](https://apis.io/rate-limits/future-perfect-healthcare/future-perfect-healthcare-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.healthcare.future-perfect.co/)
+- [Pricing](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/557090777176539)
+- [Blog](https://www.healthcare.future-perfect.co/index.php/latest-news)
+- [Privacy policy](https://www.healthcare.future-perfect.co/index.php/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 23.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 60.5 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.1** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/future-perfect-healthcare/](https://apis.io/providers/future-perfect-healthcare/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Future Perfect (Healthcare): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/future-perfect-healthcare/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
